@@ -1,0 +1,8 @@
+{
+  "baseUrl": "",
+  "provider": "deepseek-account",
+  "model": "deepseek-flash",
+  "asrPython": "python",
+  "visionProvider": "deepseek-account",
+  "visionModel": "deepseek-flash"
+}

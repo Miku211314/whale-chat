@@ -1,0 +1,21 @@
+# 依赖与构建产物
+node_modules/
+build/
+dist/
+*.log
+
+# 运行期数据（含聊天记录、令牌、上传图片、证书）——绝对不要提交
+data/
+room/
+
+# 系统 / 编辑器
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+
+# 本地环境
+.env
+.env.*

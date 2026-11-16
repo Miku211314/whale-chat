@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b1220">
+<title>小鲸鱼 · 只属于我们俩</title>
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/app-icon.png">
+<link rel="apple-touch-icon" href="/app-icon.png">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div id="bg"></div>
+<div id="bg-dim"></div>
+<div id="app">
+  <header>
+    <div class="ava" id="ava-her"><img src="/uploads/avatar-her.png" alt=""></div>
+    <div class="who">
+      <div class="name">小鲸鱼</div>
+      <div class="sub" id="sub">只属于我们俩 · 在线</div>
+    </div>
+    <button id="btn-settings" title="设置">⚙</button>
+    <button id="menu" title="重开房间">⋯</button>
+  </header>
+
+  <main id="msgs"></main>
+  <div id="typing" class="typing hidden"><span></span><span></span><span></span></div>
+
+  <div id="stickers" class="hidden">
+    <div class="st-head">表情包<span id="st-close">×</span></div>
+    <div id="st-grid" class="st-grid"></div>
+  </div>
+
+  <div id="settings" class="hidden">
+    <div class="st-head">设置<span id="set-close">×</span></div>
+    <div class="set-list">
+      <button class="set-item" data-target="her">换她的头像</button>
+      <button class="set-item" data-target="me">换我的头像</button>
+      <button class="set-item" data-target="background">换聊天背景</button>
+      <button class="set-item" data-target="background-clear">恢复默认背景</button>
+      <label class="set-dim">背景暗度 <input id="dim" type="range" min="0" max="80" value="35"></label>
+    </div>
+  </div>
+
+  <footer>
+    <div class="tools">
+      <button id="btn-st" title="表情包">😀</button>
+      <button id="btn-img" title="发图片">🖼</button>
+      <button id="btn-voice" title="点一下开始录音，再点一下发送">🎤</button>
+      <span class="hint">粘贴图片也能发</span>
+    </div>
+    <div class="row">
+      <textarea id="input" rows="1" placeholder="说点什么…"></textarea>
+      <button id="send">发送</button>
+    </div>
+  </footer>
+  <input id="file" type="file" accept="image/*" multiple hidden>
+  <input id="file-avatar" type="file" accept="image/*" hidden>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>
